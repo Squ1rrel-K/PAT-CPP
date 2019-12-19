@@ -1,34 +1,23 @@
 #include <iostream>
-#include <string>
-
 using namespace std;
-int a = 0;
-int b = 0;
-int sum = 0;
+int main()
+{
+    int n = 0;
+    int count = 0;
+    cin >> n;
+    while (n != 1)
+    {
+        count++;
+        if (n % 2 == 0) {
+            n = n / 2;
 
-int main() {
-
-
-    cin >> a >> b;
-    sum = a + b;
-
-    if (sum < 0) {
-        cout << "-";
-        sum = -sum;
+        }
+        else {
+            n = (3 * n + 1) / 2;
+        }
     }
-    if (sum < 1000) {
-        cout << sum << endl;
-    } else if (sum < 1000000) {
-        string str = to_string(sum);
-        str.insert(str.size() - 3, ",");
-        cout << str << endl;
-    } else {
-        string str = to_string(sum);
-        str.insert(str.size() - 6, ",");
-        str.insert(str.size() - 3, ",");
-        cout << str << endl;
-    }
+    cout << count;
 
-    return 0;
 
 }
+
