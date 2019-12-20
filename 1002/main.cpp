@@ -2,7 +2,6 @@
 
 using namespace std;
 
-
 int main() {
     string input;
     int sum = 0;
@@ -20,17 +19,14 @@ int main() {
     for (int i = 0; i < res.size(); i++) {
         // If reach the end, cout end
         if (i == res.size() - 1) {
-            cout << arr[res[i]-'0'];
+            cout << arr[res[i] - '0'];
             cout << endl;
         }
-        // else print number and space
+            // else print number and space
         else {
-            cout << arr[res[i]-'0'];
+            cout << arr[res[i] - '0'];
             cout << " ";
 
         }
-
     }
-
-
 }

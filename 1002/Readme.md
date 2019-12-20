@@ -11,8 +11,6 @@
 ## 输出样例： 
 yi san wu
 ## 思路分析
-string 和 int 来回转换
-
-to_string() vs string-"0" vs valueOf()
+考察的重点其实是 string char 和 int 来回转换
 
 读取求和，注意末位没有空格
